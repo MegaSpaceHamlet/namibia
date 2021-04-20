@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.body {
+    display: flex;
+    overflow: auto;
+    flex: 1 1 auto;
+    background-image: url("../images/pc/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body h1 {
+    position: fixed;
+    width: 100%;
+    height: 7.5%;
+    padding-top: 2.5%;
+    margin: auto;
+    text-align: center;
+}
+
+.gallery {
+    display: inline-flex;
+    flex-flow: row wrap;
+    position: relative;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+    align-items: center;
+    justify-content: space-around;   
+}
+
+.photo {
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: column wrap;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.photo:fullscreen {
+    width: auto !important;
+    height: auto !important;
+    margin: auto !important;
+}
+
+.photo img:not(:fullscreen) {
+    width: 208px;
+    height: 138.76px;
+}
+
+.photo img:not(:fullscreen):hover {
+    opacity: 0.5;
+}
+
+.photo img:fullscreen {
+    width: auto !important;
+    height: auto !important;
+    margin: auto !important;
+    filter: brigthness(100%);
+} 
+
+.footer {
+    flex: 0 0 50px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.footer ol {
+    list-style-type: none;
+}
