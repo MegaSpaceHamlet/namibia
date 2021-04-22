@@ -1,0 +1,3 @@
+extract.txt
+seals-2.jpg
+seals.jpg

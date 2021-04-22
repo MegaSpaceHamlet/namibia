@@ -11,7 +11,7 @@ body {
 
 .body {
     display: flex;
-    overflow: auto;
+    overflow: scroll;
     flex: 1 1 auto;
     background-image: url("../images/pc/background.jpg");
     background-size: cover;
@@ -31,14 +31,21 @@ body {
     display: inline-flex;
     flex-flow: row wrap;
     position: relative;
+    overflow-y: scroll;
+    scrollbar-width: none;
     top: 15%;
     left: 10%;
     width: 80%;
     height: 70%;
     align-items: center;
-    justify-content: space-around;   
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 
+.gallery::-webkit-scrollbar {
+    display: none;
+}
 .photo {
     display: flex;
     flex: 0 1 auto;
@@ -47,11 +54,12 @@ body {
     background-color: white;
 }
 
+/*
 .photo:fullscreen {
     width: auto !important;
     height: auto !important;
     margin: auto !important;
-}
+} */ 
 
 .photo img:not(:fullscreen) {
     width: 208px;
@@ -66,7 +74,7 @@ body {
     width: auto !important;
     height: auto !important;
     margin: auto !important;
-    filter: brigthness(100%);
+    filter: brightness(100%);
 } 
 
 .footer {
@@ -77,6 +85,11 @@ body {
     bottom: 0;
     width: 100%;
     background-color: black;
+}
+
+.footer li > a {
+    text-decoration: none;
+    color: white;
 }
 
 .footer ol {
