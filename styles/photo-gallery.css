@@ -16,6 +16,8 @@ body {
     background-image: url("../images/background-optimized.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .body h1 {
@@ -33,6 +35,7 @@ body {
     position: relative;
     overflow-y: scroll;
     scrollbar-width: none;
+    -ms-overflow-style: none;
     top: 15%;
     left: 10%;
     width: 80%;
@@ -46,6 +49,11 @@ body {
 .gallery::-webkit-scrollbar {
     display: none;
 }
+
+.body::-webkit-scrollbar {
+    display: none;
+}
+
 .photo {
     display: flex;
     flex: 0 1 auto;
